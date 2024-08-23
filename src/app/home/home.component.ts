@@ -21,14 +21,25 @@ interface Achievement {
 })
 export class HomeComponent {
   achievements: Achievement[] = [
-    { title: 'Achievement 1', description: 'This is the first achievement.' },
-    { title: 'Achievement 2', description: 'This is the second achievement.' },
-    { title: 'Achievement 3', description: 'This is the third achievement.' },
-    // Add more achievements as needed
+    { title: '2022 - 2023', description: 'KMUN Communications Director; National Secretariat' },
+    { title: '2022 - 2023', description: '14th Student Council Chairperson of the Board, PR Senate' },
+    { title: '2022', description: 'SUMG Assistant Director of Communications' },
+    { title: '2021', description: 'SUMG Social Media Manager' },
+    { title: '2020 - 2021', description: '13th Student Council Director of Partnerships, VP Senate' },
+    { title: '2020 - 2021', description: '12th Student Council Social Media Manager, PR Senate' },
+    { title: '2020 - 2021', description: 'SU Chorale President' },
+    { title: '2020', description: 'SU Chorale Vice President' }
   ];
 
 
   images: Slide[] = [
+    {
+      type: 'video',
+      imgSrc: 
+      'sharonvid3.mp4',
+      imgAlt:
+      'CampaignVid3',
+    },
     {
       type: 'image',
       imgSrc:
@@ -37,11 +48,11 @@ export class HomeComponent {
       'CampaignPhoto4',
     },
     {
-      type: 'video',
+      type: 'image',
       imgSrc: 
-      'sharonvid3.mp4',
+      'sharon8.jpg',
       imgAlt:
-      'CampaignVid3',
+      'CampaignPhoto8',
     },
     {
       type: 'image',
@@ -56,13 +67,6 @@ export class HomeComponent {
       'sharon2.jpg',
       imgAlt:
       'CampaignPhoto2',
-    },
-    {
-      type: 'video',
-      imgSrc: 
-      'sharonvid1.mp4',
-      imgAlt:
-      'CampaignVid1',
     },
     {
       type: 'image',
