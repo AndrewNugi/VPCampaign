@@ -1,0 +1,275 @@
+.background {
+    background-color: #abe3fb;
+    border-radius: 0 0 10px 10px;
+
+}
+.vote, .aboutme, .whyme {
+    line-height: 1.4;
+} 
+.manifesto {
+    line-height: 1.7;
+}
+.vote {
+    margin: 10px;
+    padding: 10px;
+}
+.vote h1 {
+    font-family: 'Alkatra', cursive;
+    font-size: 55px;
+    color: #15396a;
+}
+.vote p {
+    font-family: 'Allura', cursive;
+    font-size: 35px;
+    color: #15396a;
+}
+
+.aboutme h1 {
+    font-family: 'Alkatra', cursive;
+    font-size: 40px;
+}
+.aboutme p {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 20px;
+}
+.whyme h1 {
+    font-family: 'Alkatra', cursive;
+    font-size: 40px;
+}
+.whyme p {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 20px;
+}
+.manifesto h1 {
+    font-family: 'Alkatra', cursive;
+    font-size: 40px;
+}
+.manifesto p {
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 25px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto; 
+    gap: 20px;
+    margin-top: 30px;
+    margin: 30px;
+}
+
+
+.grid-container .aboutme {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #7cc3fb;
+    padding: 20px;
+    border-radius: 50px 5px 5px 50px;
+    border: 1px solid #abe3fb;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    height: auto;
+}
+.grid-container .whyme {
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #7cc3fb;
+    padding: 20px;
+    border-radius: 5px 50px 50px 5px;
+    border: 1px solid #abe3fb;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+    height: auto;
+}
+.grid-container .manifesto {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    border: 1px solid #abe3fb; /* Border color and width */
+    border-radius: 50px 50px 50px 50px;
+    padding: 20px; /* Padding inside the grid items */
+    box-sizing: border-box; /* Include border and padding in element's total width and height */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.5); /* Outer shadow */
+    background-color: #7cc3fb; /* Base color */
+    height: auto;
+}    
+h1, p {
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center text */
+    color: #15396a;
+}
+/*.footer {
+    margin-bottom: 25px;
+    padding: 20px;
+    h1{
+        font-family: 'Allura', cursive;
+        color: #15396a;
+        font-size: 40px;
+    }
+}*/
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto; 
+    gap: 20px;
+}
+.footer .hashtag {
+    grid-column: 1;
+    height: auto;
+    font-family: 'Allura', cursive;
+    color: #15396a;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 150px; 
+        height: auto;
+    }
+}
+.footer .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer .contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    .contact-left-title h2{
+        font-size: 25px;
+        font-family: 'Alkatra', cursive;
+        color: #15396a;
+        margin-bottom: 5px;
+        line-height: 1.0;
+    }
+}
+.contact-left-title hr{
+    border: none;
+    width: 100px;
+    height: 3px;
+    background-color: #15396a;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.footer .contact-inputs{
+    width: 400px;
+    height: 40px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    color: #666;
+    border-radius: 10px;
+}
+.contact-left textarea {
+    height: 140px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+.footer .contact-inputs:focus{
+    border: 2px solid #15396a;
+}
+.footer .contact-inputs::placeholder {
+    color: #a9a9a9;
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 15px;
+}
+.contact-left button {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-family: 'Alkatra', cursive;
+    font-size: 13px;
+    background-color: #abe3fb;
+    color: #15396a;
+    gap: 5px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.contact-left button:hover {
+    color: #abe3fb;
+    background-color: #15396a;
+}
+
+.footer2 {
+    font-family: Arial;
+    color: #15396a;
+    place-items: center;
+    font-family: 'Edu TAS Beginner', cursive;
+    padding-bottom: 10px;
+
+}
+svg {
+    height: 30px;
+    width: 100%;
+    display: flex;
+    margin: 10px;
+}
+
+@media (max-width: 550px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto; /* Stack items on smaller screens */
+        margin: 10px;
+    }
+    .grid-container .whyme,
+    .grid-container .aboutme,
+    .grid-container .manifesto {
+        padding: 20px;
+        margin: 20px;
+        grid-column: 1;
+        grid-row: auto;
+        border-radius: 50px 50px 50px 50px;
+        h1{
+            font-size: 30px
+        }
+        p {
+            font-size: 20px;
+        }
+    }
+    .footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto; 
+        margin: 10px;
+    }
+    .footer .contact-container,
+    .footer .hashtag {
+        padding: 10px;
+        margin: 10px;
+        grid-column: 1;
+        grid-row: auto;
+        h1{
+            font-size: 20px
+        }
+    }
+    .footer .contact-inputs {
+        width: 250px;
+        height: 30px;
+    }
+    .footer .contact-inputs::placeholder {
+        font-size: 12px;
+    }
+    img{
+        padding-right: 1px;
+        margin-bottom: -50px;
+    }
+    .vote {
+        height: auto;
+        width: auto;
+        margin: auto;
+        h1 {
+            font-size: 35px;
+        }
+        p {
+            font-size: 20px;
+        }
+    
+    }
+    .footer2 p{
+        font-size: 10px;
+        font-family: 'Alkatra', cursive;
+    }
+}
+

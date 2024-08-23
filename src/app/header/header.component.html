@@ -1,0 +1,31 @@
+<div class="header-container">
+    <div class="logo">
+        <img src="schoollogo2.png" alt="">
+    </div>
+    
+    <!-- Hamburger Icon for small screens -->
+    <div class="menu-icon" (click)="toggleDropdown()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <!-- Dropdown Menu -->
+    <div class="nav" [ngClass]="{'dropdown-active': isDropdownOpen}">
+        <div class="achievements">
+            <p><a href="#achievements">Achievements</a></p>
+        </div>
+        <div class="aboutme">
+            <p><a href="#aboutme">Who am I?</a></p>
+        </div>
+        <div class="whyme">
+            <p><a href="#whyme">Why Me?</a></p>
+        </div>
+        <div class="manifesto">
+            <p><a href="#manifesto">Manifesto</a></p>
+        </div>
+        <div class="contactsharon">
+            <p><a href="#contactsharon">Contact Sharon</a></p>
+        </div>
+    </div>
+</div>

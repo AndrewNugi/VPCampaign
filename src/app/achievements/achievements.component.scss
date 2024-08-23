@@ -1,0 +1,96 @@
+.lookthrough {
+    margin-top: 30px;
+    margin-bottom: -10px;
+    padding: 0;
+    text-align: center;
+    position: relative;
+}
+.lookthrough h1 {
+    font-family: 'Alkatra', cursive;
+    font-size: 28px;
+    color: #15396a;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    text-align: center;
+    border: 1px solid #15396a;
+    border-radius: 25px 25px 25px 25px;
+  }
+  
+  .achievement-card {
+    padding: 0;
+    border-radius: 15px;
+    background-color: #abe3fb;
+    border: none;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  }
+  .achievement-card h2 {
+    font-family: 'Alkatra', cursive;
+    font-size: 25px;
+    color: #15396a;
+    margin-bottom: 5px;
+    line-height: 1.2;
+  }
+  .achievement-card p{
+    font-family: 'Edu TAS Beginner', cursive;
+    font-size: 15px;
+    color: #15396a;
+    margin-top: 0;
+    line-height: 1.2;
+  }
+  
+  button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #abe3fb;
+    color: #15396a;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: 'Alkatra', cursive;
+  }
+  
+  button:hover {
+    background-color: #15396a;
+    color: #abe3fb;
+  }
+
+  @media (max-width: 768px) {
+    .achievement-title {
+      font-size: 20px;
+    }
+  
+    .achievement-description {
+      font-size: 14px;
+    }
+  
+    .achievement-card {
+      padding: 15px;
+    }
+    .container {
+      margin: 15px;
+    }
+  }
+  
+  /* Responsive styles for mobile devices */
+  @media (max-width: 480px) {
+    .achievement-title {
+      font-size: 18px;
+    }
+  
+    .achievement-description {
+      font-size: 12px;
+    }
+  
+    .achievement-card {
+      padding: 10px;
+    }
+  }  

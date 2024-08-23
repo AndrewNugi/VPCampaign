@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="lookthrough">
+        <h1>Take a look at some of SJ's achievements!😉</h1>
+    </div>
+  
+    <div class="slider-container" (swipeleft)="onSwipeLeft()" (swiperight)="onSwipeRight()">
+        <div class="achievement-card" *ngIf="achievements[currentIndex]">
+          <h2>{{ achievements[currentIndex].title }}</h2>
+          <p>{{ achievements[currentIndex].description }}</p>
+        </div>
+        <button (click)="showPrev()" [disabled]="currentIndex === 0">Previous</button>
+        <button (click)="showNext()" [disabled]="currentIndex === achievements.length - 1">Next</button> 
+    </div>
+  </div>

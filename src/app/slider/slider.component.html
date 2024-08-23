@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="slider-item"
+    *ngFor="let image of images; let i = index"
+    [ngClass]="
+    {
+        'selected': i === selectedIndex,
+        'prev': i === selectedIndex - 1,
+        'next': i === selectedIndex + 1,
+        'hideLeft': i < selectedIndex - 1,
+        'hideRight': i > selectedIndex + 1,
+    }">
+    <ng-container [ngSwitch]="image.type">
+        <img
+          *ngSwitchCase="'image'"
+          [src]="image.imgSrc"
+          [alt]="image.imgAlt"
+          class="slider-img"
+          (panright)="showPrev(i)"
+          (panleft)="showNext(i)"
+        />
+        <video
+          *ngSwitchCase="'video'"
+          #video
+          [src]="image.imgSrc"
+          class="slider-img"
+          controls
+          (panright)="showPrev(i)"
+          (panleft)="showNext(i)"
+          controls
+        >
+        </video>
+      </ng-container>
+    </div>
+
+</div>
