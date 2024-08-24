@@ -46,4 +46,5 @@ export class SliderComponent implements AfterViewInit {
       this.selectedIndex = i + 1;
     }
   }
+  
 }

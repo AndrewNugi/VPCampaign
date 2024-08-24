@@ -1,4 +1,10 @@
 <!--Install hammerjs - npm i hammerjs, npm i --save-dev @types/hammerjs
 Install node.js
 install angular -->
+<div *ngIf="showAlert" class="alert-modal">
+    <div class="alert-content">
+      <p>Swipe through the images to see more!</p>
+      <button (click)="closeAlert()">OK</button>
+    </div>
+</div>  
 <app-home></app-home>

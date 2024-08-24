@@ -36,9 +36,9 @@ export class HomeComponent {
     {
       type: 'video',
       imgSrc: 
-      'sharonvid3.mp4',
+      'sharonvid4.mp4',
       imgAlt:
-      'CampaignVid3',
+      'CampaignVid4',
     },
     {
       type: 'image',
