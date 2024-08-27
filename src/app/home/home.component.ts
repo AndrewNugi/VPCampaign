@@ -57,6 +57,13 @@ export class HomeComponent {
     {
       type: 'image',
       imgSrc: 
+      'sharon9.jpg',
+      imgAlt:
+      'CampaignPhoto9',
+    },
+    {
+      type: 'image',
+      imgSrc: 
       'sharon3.jpg',
       imgAlt:
       'CampaignPhoto3',
